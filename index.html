@@ -9,20 +9,23 @@
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" width="103" height="104" >
         <defs>
-          <radialGradient id="ColorC" cx="0" cy="0" r="1" >
-            <stop offset="0%" stop-color="#159398"/>
-            <stop offset="100%" stop-color="#FAA836"/>
-          </radialGradient>
+          <linearGradient id="ColorC" >
+              <stop offset="0%" stop-color="#FAA836"/>
+              <stop offset="100%" stop-color="#159398"/>
+          </linearGradient>
         </defs>
       </svg>
     <div class="container">
         <div class="card">
-            <div class="percent" style="--clr: #FAA836 ; --num: 50">
+            <div class="percent" style="--clr: #FAA836 ; --num: 80">
                 <div class="dot"></div>
-                <svg>
+                <svg stroke-linecap="round">
                     <circle  cx="70" cy="70 " r="70"></circle>
                     <!-- <circle  cx="70" cy="70 " r="70"></circle> -->
                 </svg>
+                <!-- <div class="percent-number">
+                    80%
+                </div> -->
             </div>
         </div>
         <div class="card"></div>
